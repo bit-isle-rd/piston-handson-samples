@@ -14,8 +14,8 @@
       password: "{{ lookup('env', 'OS_PASSWORD') }}"
     spec:
       host_prefix: "{{ lookup('pipe', 'hostname | cut -b 1-9') }}"
-      flavor_ram: 2048
-      flavor_name: "m1.small"
+      flavor_ram: 1024
+      flavor_name: "m1.xsmall"
       image_name: "centos-base"
       key_name: "default"
       secgroups: "default,sg-for-step-server"
