@@ -18,7 +18,7 @@
       flavor_name: "m1.xsmall"
       image_name: "centos-base"
       key_name: "default"
-      secgroups: "default,sg-for-step-server"
+      secgroups: "default,sg-for-ansible-server"
 
   tasks:
   - name: ansible_python_interpreter setup
